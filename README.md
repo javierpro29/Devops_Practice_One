@@ -1,1 +1,1 @@
-# Devops_Practice_One
+# Devops_Practices
