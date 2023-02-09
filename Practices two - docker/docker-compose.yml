@@ -1,0 +1,17 @@
+
+services:
+  python:
+    build: ./
+    command: python3 ./app.py
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: goodcode
